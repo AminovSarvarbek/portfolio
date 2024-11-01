@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvarbek Aminov - Full Stack & Software Developer | CEO</title>
+    <meta name="description" content="Sarvarbek Aminov, a skilled Full Stack and Software Developer offering professional services in web development, backend programming, and cybersecurity fundamentals.">
+    <meta name="keywords" content="Full Stack Developer, Software Developer, Web Development, Backend Development, Cybersecurity, Sarvarbek Aminov">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .hero {
+            background-image: url('./image.webp');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            z-index: 1;
+        }
+        .btn-custom {
+            background-color: #f44336;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #d32f2f;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .service-card, .portfolio-card, .blog-card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover, .portfolio-card:hover, .blog-card:hover {
+            transform: translateY(-10px);
+        }
+        .portfolio-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form input::placeholder, .contact-form textarea::placeholder {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-4 font-weight-bold">Sarvarbek Aminov</h1>
+            <p class="lead">Full Stack & Software Developer | CEO</p>
+            <a href="#services" class="btn btn-custom mt-4">My Services</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Services -->
+        <section id="services" class="py-5">
+            <div class="container text-center">
+                <h2 class="section-title">My Services</h2>
+                <p>Comprehensive solutions for web, backend, and cybersecurity development to bring your ideas to life.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card p-4">
+                            <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                            <h5 class="font-weight-bold">Web Development</h5>
+                            <p>Custom websites and applications crafted for performance, security, and user experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card p-4">
+                            <i class="fas fa-cogs fa-3x mb-3"></i>
+                            <h5 class="font-weight-bold">Backend Development</h5>
+                            <p>Robust backend solutions, including database integration and server-side programming.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card p-4">
+                            <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                            <h5 class="font-weight-bold">Cybersecurity Fundamentals</h5>
+                            <p>Introductory knowledge of cybersecurity practices to help secure your applications and data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="py-5 bg-dark">
+    <div class="container text-center">
+        <h2 class="section-title">Portfolio</h2>
+        <p>Showcasing a selection of successful projects.</p>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="portfolio-card">
+                    <!-- <img src="https://example.com/delivery-bot.jpg" alt="Delivery Bot - A bot that delivered products through an admin panel and client handling."> -->
+                    <div class="p-3">
+                        <h5 class="font-weight-bold">Delivery Bot</h5>
+                        <p><strong>May 2023 - April 2023</strong></p>
+                        <p>A bot that delivered products through a bot with an admin panel and client handling. Customers could choose products and shop through different locations. Admin panel for admins. Gained experience in creating multi-functional bots.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="portfolio-card">
+                    <!-- <img src="https://example.com/student-control-software.jpg" alt="Student Control Software App - A complete program with backend, frontend, and a desktop application."> -->
+                    <div class="p-3">
+                        <h5 class="font-weight-bold">Student Control Software App</h5>
+                        <p><strong>May 2024</strong></p>
+                        <p>Complete program with backend, frontend, and a desktop application. Data storage and custom new admin panels. Scanner program with desktop (Electron). Gained experience in creating multi-functional programs and clean code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="https://t.me/techSarvarbek" target="_blank" class="btn btn-custom">View More Projects on Telegram</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Sarvarbek Aminov. All rights reserved.</p>
+            <p>Contact me on <a href="https://t.me/techSarvarbek" target="_blank" class="text-danger">Telegram</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
